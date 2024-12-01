@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+    creationTimestamp: "2024-12-01T10:05:38Z"
+    name: zad1-quota
+    namespace: zad1
+    resourceVersion: "278948"
+    uid: 22bc49dd-9ff5-4659-8cbf-8d81261574ce
+spec:
+    hard:
+        requests.cpu: "2000m"
+        requests.memory: 1536Mi
+        limits.cpu: "2000m"
+        limits.memory: "1536Mi"
+        pods: "10"
+status: {}
